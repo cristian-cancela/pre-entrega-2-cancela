@@ -1,0 +1,655 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* seccion de inicio */
+
+/* fondo de pantalla en inicio*/
+
+.fondo {
+    background-image: url(../img/black-and-white-hombre\ traje.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: -10;
+    background-attachment: fixed;
+
+}
+
+/* estructura header */
+
+.header {
+
+    min-width: 200px;
+    background-color: transparent;
+    min-height: 10vh;
+
+}
+
+/* barra de navegacion y logo */
+
+.navegador {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px;
+
+}
+
+
+.navegador ul li {
+
+    list-style-type: none;
+    display: inline-block;
+    padding: 12px;
+
+}
+
+.navegador ul li a {
+    color: rgb(191, 187, 187);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navegador ul li a:hover {
+    color: aqua;
+    transition: .3s;
+}
+
+.logo h1 {
+    color: rgb(164, 160, 160);
+    ;
+    font-size: 30px;
+}
+
+/* se elimina la linea debajo del enlace directo en el logo */
+a {
+
+    text-decoration: none;
+}
+
+/* estructura main en pagina de inicio */
+
+
+.main.index {
+    background-color: transparent;
+    min-height: 90vh;
+}
+
+/* eslogan */
+.eslogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+    flex-direction: column;
+}
+
+/* utilizacion de span para darle color a letras especificas */
+span {
+    color: aqua;
+
+}
+
+/* se centra el texto */
+.eslogan h2 {
+    color: rgb(164, 160, 160);
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.parrafo-eslogan {
+    color: rgb(164, 160, 160);
+    letter-spacing: 2px;
+
+
+
+
+}
+
+/* se reutiliza codigo de catalogo para las imagenes */
+
+
+
+/* footer aplicado a todas las paginas*/
+
+.footer {
+    min-height: 10vh;
+    display: flex;
+    background-color: transparent;
+    padding: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.logo-footer {
+    color: rgb(164, 160, 160);
+    display: flex;
+    align-items: center;
+    padding: 9px 58px 33px 57px;
+    justify-content: center;
+}
+
+/* estilo dado a bootstrap */
+
+.row-footer {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    justify-content: space-evenly;
+}
+
+/* logo whatsapp */
+.btn-outline-success {
+    --bs-btn-color: aqua;
+    --bs-btn-border-color: aqua;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: aqua;
+    --bs-btn-hover-border-color: aqua;
+    --bs-btn-focus-shadow-rgb: 25, 135, 84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: aqua;
+    --bs-btn-active-border-color: #198754;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #198754;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #198754;
+    --bs-gradient: none;
+}
+
+/* logo facebook */
+
+.btn-outline-primary {
+    --bs-btn-color: aqua;
+    --bs-btn-border-color: aqua;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: aqua;
+    --bs-btn-hover-border-color: aqua;
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: aqua;
+    --bs-btn-active-border-color: #0d6efd;
+    --bs-btn-active-shadow: inset 0 3px 5px rgb(0, 0, 0.125);
+    --bs-btn-disabled-color: #0d6efd;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #0d6efd;
+    --bs-gradient: none;
+}
+
+/* logo instagram */
+
+.btn-outline-danger {
+    --bs-btn-color: aqua;
+    --bs-btn-border-color: aqua;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: aqua;
+    --bs-btn-hover-border-color: aqua;
+    --bs-btn-focus-shadow-rgb: 220, 53, 69;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: aqua;
+    --bs-btn-active-border-color: #dc3545;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #dc3545;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #dc3545;
+    --bs-gradient: none;
+}
+
+
+
+/* seccion de catalogo */
+
+/* fondo */
+
+.fondo-catalogo {
+    background-image: url(../img/fondo\ de\ pantalla\ luces.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: -10;
+    background-attachment: fixed;
+
+}
+
+/* sección main de catalogo */
+
+
+
+.contenedor-imagenes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.titulo-catalogo {
+    color: rgb(164, 160, 160);
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    margin: 30px;
+    font-size: 20px;
+
+}
+
+.caja img {
+    width: 220px;
+    height: 250px;
+    margin: 15px;
+    border-radius: 30px;
+    transition: 0.3s ease;
+
+}
+
+
+.caja img:hover {
+    border-radius: 30px;
+    box-shadow: 3px 3px aqua;
+    transition: 0.3s ease;
+
+
+}
+
+.caja p {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+
+}
+
+.caja {
+    margin: 30px;
+}
+
+/* seccion como comprar */
+
+
+.fondo-como-comprar {
+    background-image: url(../img/fondo\ superficie.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: -10;
+    background-attachment: fixed;
+
+}
+
+.row {
+    margin: 40px 10px;
+    padding: 10px 10px;
+
+}
+
+li {
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    margin: 15px;
+    line-height: 40px;
+    text-align: left;
+}
+
+p {
+    text-align: left;
+}
+
+.lista-botones li {
+    text-align: center;
+    list-style: none;
+}
+
+h3 {
+    color: rgb(154, 156, 156);
+}
+
+.texto-como-comprar {
+    color: rgb(214, 216, 216);
+}
+
+.mapa {
+    outline: 4px solid aqua;
+    margin: 5em auto;
+    width: 240px;
+    height: 240px;
+}
+
+.mapa iframe {
+    height: 100%;
+    width: 100%;
+
+}
+
+
+
+
+
+/* seccion nosotros */
+.fondo-conocenos {
+    background-image: url(../img/fondo\ pantalla-cinta-metrica.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -10;
+    background-attachment: fixed;
+}
+
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: auto 40% auto;
+    gap: 1.5em;
+
+
+}
+
+
+
+.imagen-persona {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+img {
+    height: 210px;
+    width: auto;
+    border-radius: 100%;
+
+}
+
+.parrafo-persona {
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+p {
+    color: white;
+    letter-spacing: 1px;
+    margin: 15px;
+    line-height: 40px;
+
+}
+
+
+
+/* seccion de contacto */
+
+/* fondo imagen en contacto*/
+.fondo-contacto {
+
+    background-image: url(../img/fondo\ de\ pantalla\ contactoss.jpg);
+    background-size: cover;
+    background-position: initial;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: -10;
+    background-attachment: fixed;
+
+}
+
+/* estructura main en contacto */
+
+.main-contacto {
+    display: flex;
+    justify-content: flex-end;
+    padding: 70px;
+    margin: 0 60px;
+}
+
+.contenedor-contacto {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(1, 1, 1);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-contacto .contenedor-registro {
+    width: 100%;
+    padding: 40px;
+}
+
+.contenedor-registro h2 {
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+.entrada-caja {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    margin: 30px 0;
+}
+
+.entrada-caja label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+
+}
+
+.entrada-caja input:focus~label,
+.entrada-caja input:valid~label {
+    top: -5px;
+
+}
+
+.entrada-caja input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+/* boton de enviar */
+
+.boton {
+    width: 100%;
+    height: 45px;
+    margin: 46px 0;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.boton:hover {
+    background-color: rgb(0, 0, 0);
+    color: aqua;
+
+}
+
+/* MQ - movile last */
+
+@media (max-width: 500px) {
+
+    /* se modifica la medida viewport height por porcentaje  */
+
+    .fondo {
+        background-image: url(../img/black-and-white-hombre\ traje.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        z-index: -10;
+        background-attachment: fixed;
+
+    }
+
+
+    /* se agrega un ancho del 100% */
+
+    .header {
+
+        min-width: 200px;
+        background-color: transparent;
+        min-height: 10vh;
+        height: 100%;
+        width: 100%;
+    }
+
+    /* barra de navegacion */
+
+    /* se justifica el contenido al centro. se modifica padding y se agrega flex wrap */
+
+    .navegador {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        flex-wrap: wrap;
+
+    }
+
+    /* se modifica el display */
+    ul {
+        display: inline-grid;
+
+    }
+
+    /* se centra el contenido, se disminuye la altura y se modifica la direccion de flex, de fila a columna */
+
+    .eslogan {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 750px;
+        flex-direction: column;
+        margin: 0 35px;
+        text-align: center;
+    }
+
+    /* se centra el contenido del parrafo */
+    .parrafo-eslogan {
+        color: rgb(164, 160, 160);
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    /* se centra el texto */
+    .titulo-catalogo {
+        color: rgb(164, 160, 160);
+        ;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        margin: 0;
+        font-size: 20px;
+
+    }
+
+    /* se centra el formulario de contacto */
+    .main-contacto {
+        justify-content: center;
+
+    }
+
+    /* seccion conocenos */
+
+    /* se modifica background position */
+    .fondo-conocenos {
+        background-image: url(../img/fondo\ pantalla-cinta-metrica.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        top: 0;
+        z-index: -10;
+        background-attachment: fixed;
+    }
+
+    /* se modifica display grid por flex */
+    .contenedor-grid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+
+    }
+
+
+
+    /* se modifica tamño de imagen */
+    img {
+        height: 100px;
+        width: 100px;
+        width: auto;
+        border-radius: 20%;
+
+    }
+
+    /* se centra todo  */
+
+    .parrafo-persona {
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    /* se modifica el tamaño de la letra */
+
+    p {
+        color: white;
+        letter-spacing: 1px;
+        margin: 15px;
+        line-height: 40px;
+        font-size: 15px;
+
+    }
+
+
+
+}
